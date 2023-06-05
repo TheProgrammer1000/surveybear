@@ -20,7 +20,7 @@ app.use(surveyRouter);
 //Global error handler
 app.use(handleGlobalErrors);
 
-const port = process.env.port || 3333;
+const port = process.env.PORT || 3333;
 
 try {
   connect().then(() => {
