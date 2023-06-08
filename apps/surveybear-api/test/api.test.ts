@@ -9,7 +9,3 @@ describe('Generic endpoints', () => {
     expect(res.status).toEqual(400);
   });
 });
-import * as supertest from 'supertest';
-import app from '../src/app';
-
-const requestWithSupertest = supertest(app);
