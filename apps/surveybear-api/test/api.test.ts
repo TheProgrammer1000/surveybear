@@ -3,6 +3,7 @@ import app from '../src/app';
 
 const requestWithSupertest = supertest(app);
 
+// Testar här!
 describe('Generic endpoints', () => {
   test('GET /api/todos', async () => {
     const res = await requestWithSupertest.get('/api/todos');
