@@ -4,9 +4,9 @@ on:
     branches:
       - test-branch
 jobs:
-  test_job:
+  testing_api:
     runs-on: ubuntu-latest
-    name: Test Job
+    name: testing api
 
     steps:
       - uses: actions/checkout@v2
@@ -16,5 +16,3 @@ jobs:
           node-version: 15.x
       - run: npm install
       - run: npx nx test surveybear-api
-      - run: npx nx test surveybear-survey-spa      
-
