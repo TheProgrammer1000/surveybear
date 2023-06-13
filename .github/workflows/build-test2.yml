@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - test-branch
-
+    paths:
+      - apps/surveybear-survey-spa/**
+      - libs/**
 jobs:
   test_jobSpa:
     runs-on: ubuntu-latest
